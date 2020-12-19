@@ -10,7 +10,7 @@ var pokedexRouter = require("./routes/pokedex");
 var pokedataRouter = require("./routes/pokedata");
 var itemsRouter = require('./routes/items');
 var calcRouter = require('./routes/calc');
-
+var googlesheetRouter = require('./routes/googlesheet');
 var app = express();
 
 // view engine setup
@@ -30,6 +30,7 @@ app.use(sassMiddleware({
 app.use(express.static(path.join(__dirname, 'public')));
 
 app.use('/', indexRouter);
+app.use("/googlesheet", googlesheetRouter);
 app.use("/pokedex", pokedexRouter);
 app.use("/pokedata", pokedataRouter);
 app.use("/items", itemsRouter);
