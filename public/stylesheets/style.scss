@@ -14,12 +14,12 @@ input[type="number"]::-webkit-inner-spin-button {
 }
 
 .input-field input[type="number"]:focus + label {
-  color: #666666 !important;
+  color: #000000 !important;
 }
 
 .input-field input[type="number"]:focus {
-  border-bottom: 1px solid #888888 !important;
-  box-shadow: 0 1px 0 0 #888888 !important;
+  border-bottom: 1px solid #000000 !important;
+  box-shadow: 0 1px 0 0 #000000 !important;
 }
 
 input.select-dropdown:focus {
@@ -103,7 +103,7 @@ footer {
 .hero {
   margin: 80px auto;
   text-align: center;
-  color:black
+  background-color: black
   h1 {
     font-weight: bold;
     font-family: "Bebas Neue";
@@ -207,7 +207,7 @@ footer {
   display: block;
   width: 180px;
   height: 30px;
-  color: black;
+  background-color: black;
   text-shadow: 1px 1px grey;
   text-transform: capitalize;
   text-align: center;
@@ -319,7 +319,7 @@ footer {
     font-weight: 600;
     font-size: 20px;
     &:hover {
-      background-color: rgba(49,49,49, 1);
+      background-color: rgba(150,40,27, 1);
     }
   }
 }
